@@ -1,6 +1,3 @@
----
----
-
 /* 
 Copied from https://github.com/derekkedziora/jekyll-demo/blob/master/scripts/mode-switcher.js
 https://github.com/derekkedziora/jekyll-demo
@@ -49,7 +46,7 @@ function initTheme() {
 	let theme = localStorage.getItem('theme');
 	if (theme === "dark") {
 		setDarkTheme();
-	}	else if (theme === "light") {
+	} else if (theme === "light") {
 		setLightTheme();
 	} else if (systemInitiatedDark.matches) {
 		setDarkTheme();
