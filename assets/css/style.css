@@ -1552,6 +1552,43 @@ a[href^="http"] {
     text-decoration: underline;
 }
 
+/* Archived roles and their descriptions share a row on wider screens. */
+.home-intro .a-past {
+    display: grid;
+    grid-template-columns: minmax(0, 35fr) minmax(0, 5fr) minmax(0, 60fr);
+}
+
+.home-intro .life {
+    grid-column: 3;
+    text-align: right;
+}
+
+.home-intro .work-details {
+    font-size: var(--text-l);
+    line-height: var(--text-leading-wide);
+    font-weight: var(--text-weight-normal);
+    padding: var(--padding-thin) 0;
+}
+
+.home-intro .idea {
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .home-intro .a-past {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .home-intro .balance {
+        display: none;
+    }
+
+    .home-intro .life {
+        grid-column: 1;
+        text-align: left;
+    }
+}
+
 /*Homepage*/
 
 
